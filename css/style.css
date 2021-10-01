@@ -1,0 +1,261 @@
+*,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+/* :focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+} */
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: #000;
+  font-weight: 300;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f5fcfd;
+}
+/* input::-ms-clear {
+  display: none;
+} */
+button {
+  cursor: pointer;
+}
+/* button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+} */
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+._container {
+  max-width: 1160px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+._ibg {
+  position: relative;
+}
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+}
+.main-button {
+  background: #0f7bff;
+  border-radius: 25px;
+  padding: 15px 50px;
+  color: #fff;
+  font-weight: 700;
+  border: 2px solid #0f7bff;
+  min-height: 50px;
+  text-align: center;
+  line-height: 125%;
+  transition: all 0.3s ease 0s;
+}
+.main-button:hover {
+  background: #ffffff;
+  border: 2px solid #0f7bff;
+  border-radius: 25px;
+  color: #0f7bff;
+}
+/*    HEADER ---------------------------------------------------------------------- */
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 50;
+}
+.header__container {
+  display: flex;
+  min-height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo__text {
+  font-weight: 700;
+  font-size: 36px;
+  color: #fff;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f7bff;
+  width: 180px;
+  height: 100px;
+  border-radius: 0px 0px 21.5px 21.5px;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  padding: 5px 0px;
+}
+.menu__list:not(:last-child) {
+  margin: 0px 50px 0px 0px;
+}
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.menu__item {
+}
+.menu__item:not(:last-child) {
+  margin: 0px 40px 0px 0px;
+}
+.menu__link {
+  color: #929292;
+  line-height: calc(20 / 16 * 100%);
+  font-weight: 500;
+}
+.menu__link:hover {
+  color: #0f7cff;
+}
+.header__button {
+  background: #0063dd;
+}
+/* .header__button {
+  background: #0063dd;
+  border-radius: 25px;
+  padding: 15px 50px;
+  color: #fff;
+  font-weight: 700;
+  border: 2px solid #0f7bff;
+}
+.header__button:hover {
+  background: #ffffff;
+  border: 2px solid #0f7bff;
+  border-radius: 25px;
+  color: #0f7bff;
+} */
+/*    PAGE ---------------------------------------------------------------------- */
+.page {
+  flex: 1 1 auto;
+}
+/*    MAIN-BLOCK ---------------------------------------------------------------------- */
+
+.main-block {
+  position: relative;
+  /* display: flex;
+  justify-content: center; */
+}
+.main-block__content {
+  padding: 100px 0px 0px 0px;
+}
+.main-block__header-block {
+}
+.header-block {
+  padding: 88px 0px 108px 0px;
+  position: relative;
+  z-index: 2;
+  max-width: 655px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.header-block > *:not(:last-child) {
+  margin-bottom: 30px;
+}
+.header-block__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+}
+.header-block__subtitle {
+  line-height: 169%;
+  color: #929292;
+}
+.header-block__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: -30px 0px; */
+}
+.main-block__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+.main-block__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+.main-block__button:not(:last-child) {
+  margin-right: 30px;
+}
+
+.main-block__devices {
+  position: relative;
+  z-index: 2;
+  flex: 0 1 33.333%;
+}
+.devices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 50px 40px;
+}
+.main-block__down {
+  z-index: 2;
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
