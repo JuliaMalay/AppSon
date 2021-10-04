@@ -87,10 +87,10 @@ h6 {
   object-fit: cover;
 }
 .main-button {
-  background: #0f7bff;
+  background-color: transparent;
   border-radius: 25px;
   padding: 15px 50px;
-  color: #fff;
+  color: #0f7bff;
   font-weight: 700;
   border: 2px solid #0f7bff;
   min-height: 50px;
@@ -99,9 +99,15 @@ h6 {
   transition: all 0.3s ease 0s;
 }
 .main-button:hover {
+  background: #0f7bff;
+  color: #fff;
+}
+.main-button_fill {
+  background: #0f7bff;
+  color: #fff;
+}
+.main-button_fill:hover {
   background: #ffffff;
-  border: 2px solid #0f7bff;
-  border-radius: 25px;
   color: #0f7bff;
 }
 .page {
@@ -478,4 +484,104 @@ h6 {
 }
 .item-how-works__text {
   line-height: 150%;
+}
+/*  PRICING ---------------------------------------------------------------------- */
+.page__pricing {
+}
+.pricing {
+}
+.pricing__container {
+}
+.pricing__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pricing__content {
+  display: flex;
+  flex-direction: column;
+  width: 332px;
+  margin-right: 60px;
+}
+.pricing__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: calc(40 / 32 * 100%);
+  margin-bottom: 30px;
+}
+.pricing__text {
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+.pricing__buttons {
+  display: flex;
+}
+.pricing__button_left {
+  border-radius: 25px 0px 0px 25px;
+  border-right: none;
+}
+.pricing__button_right {
+  border-radius: 0px 25px 25px 0px;
+}
+.pricing__column {
+  flex: 0 1 50%;
+}
+.pricing__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0px 45px 0px;
+  box-shadow: 0px 4px 20px rgba(0, 78, 172, 0.08);
+  border-radius: 5px;
+  width: 362px;
+}
+.pricing__item:not(:last-child) {
+  margin-right: 30px;
+}
+.item-pricing {
+}
+.item-pricing__icon {
+}
+.item-pricing__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: calc(22 / 18 * 100%);
+}
+.item-pricing__line {
+  border: solid 1px #e9f3f8;
+  width: 80%;
+  margin: 20px;
+}
+.item-pricing__content {
+}
+.item-pricing__service {
+  line-height: 184%;
+  text-align: center;
+}
+.item-pricing__buy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-pricing__buy > * {
+  margin-top: 25px;
+}
+/* .item-pricing__buy > *:not(:last-child) {
+  margin-bottom: 25px;
+} */
+.currency {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18 * 100%);
+  color: #0f7bff;
+}
+.price {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: calc(40 / 32 * 100%);
+  color: #0f7bff;
+}
+.main-button {
 }
