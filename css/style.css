@@ -24,7 +24,7 @@ section {
 html,
 body {
   height: 100%;
-  line-height: 1;
+  line-height: 150%;
   font-size: 16px;
   color: #000;
   font-weight: 300;
@@ -223,7 +223,7 @@ h6 {
   margin-bottom: 30px;
 }
 .header-block__title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 45px;
 }
@@ -383,12 +383,10 @@ h6 {
   line-height: calc(40 / 32 * 100%);
 }
 .item-about__text {
-  line-height: 150%;
 }
 .item-about__more {
   color: #0063dd;
   font-weight: 500;
-  line-height: 150%;
   display: flex;
 }
 .item-about__more > *:not(:last-child) {
@@ -438,7 +436,6 @@ h6 {
   line-height: calc(40 / 32 * 100%);
 }
 .header__text {
-  line-height: 150%;
 }
 .how-works__body {
   position: relative;
@@ -483,7 +480,6 @@ h6 {
   line-height: calc(22 / 18 * 100%);
 }
 .item-how-works__text {
-  line-height: 150%;
 }
 /*  PRICING ---------------------------------------------------------------------- */
 .page__pricing {
@@ -510,7 +506,6 @@ h6 {
   margin-bottom: 30px;
 }
 .pricing__text {
-  line-height: 150%;
   margin-bottom: 40px;
 }
 .pricing__buttons {
@@ -544,7 +539,7 @@ h6 {
 .item-pricing__icon {
 }
 .item-pricing__title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: calc(22 / 18 * 100%);
 }
@@ -583,5 +578,166 @@ h6 {
   line-height: calc(40 / 32 * 100%);
   color: #0f7bff;
 }
-.main-button {
+/*  free-trial ---------------------------------------------------------------------- */
+.page__free-trial {
+}
+.free-trial {
+  background-color: #f5fcfd;
+  padding: 133px 0px 113px 0px;
+}
+.free-trial__container {
+}
+._container {
+}
+.free-trial__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.free-trial__content {
+  margin-right: 150px;
+}
+.free-trial__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: calc(40 / 32 * 100%);
+}
+.free-trial__title:not(:last-child) {
+  margin: 0px 0px 25px 0px;
+}
+.free-trial__text {
+}
+.free-trial__button {
+  display: flex;
+  min-height: 50px;
+  background-color: #0f7bff;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 15px 70px;
+  transition: background-color 0.3s ease 0s;
+}
+.free-trial__button > *:not(:last-child) {
+  margin-right: 15px;
+}
+/*    SUBSCRIBE ---------------------------------------------------------------------- */
+
+.subscribe {
+  /* position: relative;
+  padding: 0px 0px 20px 0px; */
+  background-color: #0f7bff;
+  padding: 120px 0px;
+}
+.subscribe__container {
+}
+.subscribe__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(45 / 36 * 100%);
+  color: #ffffff;
+  text-align: center;
+}
+.subscribe__title:not(:last-child) {
+  margin-bottom: 30px;
+}
+.subscribe__form {
+  display: flex;
+  align-items: center;
+  width: 558px;
+}
+.subscribe__input {
+  width: 100%;
+  flex: 1 1 auto;
+  padding: 0 40px;
+  min-height: 50px;
+  border-radius: 25px 0px 0px 25px;
+  background: #0063dd;
+  border: 1px solid #0063dd;
+  color: #fff;
+  outline: none;
+  font-family: Quicksand;
+  border-right: 0;
+  font-weight: normal;
+  font-size: 16px;
+}
+input[type='email']::-moz-placeholder {
+  color: #fff; /* Цвет подсказывающего текста */
+}
+input[type='email']::-webkit-input-placeholder {
+  color: #fff;
+}
+input[type='email']:-ms-input-placeholder {
+  color: #fff;
+}
+input[type='email']::-ms-input-placeholder {
+  color: #fff;
+}
+input[type='email']::placeholder {
+  color: #fff;
+}
+.subscribe__input:hover {
+  color: #000;
+}
+.subscribe__button {
+  font-family: Quicksand;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 0px 25px 25px 0px;
+  display: flex;
+  min-height: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #0063dd;
+  padding: 0 40px;
+  transition: background-color 0.3s ease 0s;
+  cursor: pointer;
+  font-weight: 700;
+}
+.subscribe__button:hover {
+  background-color: #fff;
+}
+
+/*    FOOTER ---------------------------------------------------------------------- */
+.footer {
+  background-color: #0063dd;
+  padding: 50px 45px;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copy {
+  color: #fff;
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__nav-item {
+  cursor: pointer;
+  color: #fff;
+}
+.footer__nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+.footer___social {
+}
+.social {
+  display: flex;
+  align-items: center;
+}
+.social__item {
+}
+.social__item:not(:last-child) {
+  margin-right: 15px;
 }
