@@ -483,6 +483,7 @@ h6 {
 }
 /*  PRICING ---------------------------------------------------------------------- */
 .page__pricing {
+  padding: 130px 0px;
 }
 .pricing {
 }
@@ -578,6 +579,96 @@ h6 {
   line-height: calc(40 / 32 * 100%);
   color: #0f7bff;
 }
+/*  REVIEWS ---------------------------------------------------------------------- */
+.page__reviews {
+}
+.reviews {
+  display: flex;
+  background-color: #f5fcfd;
+}
+.reviews__image {
+}
+.reviews__container {
+  display: flex;
+
+  align-items: center;
+}
+.reviews__body {
+  min-width: 0;
+  margin-left: 100px;
+}
+.reviews__title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: calc(40 / 32 * 100%);
+  margin-bottom: 40px;
+}
+.review-slider {
+}
+.swiper {
+}
+.review-slider__wrapper {
+  margin-bottom: 40px;
+}
+.swiper-wrapper {
+}
+.review-slider__slide {
+  padding: 40px 30px;
+  max-width: 360px;
+  width: auto;
+  height: 215px;
+  background-color: #fff;
+  box-shadow: 0px 4px 20px rgba(0, 70, 156, 0.08);
+}
+.swiper-slide {
+}
+.review-item {
+  position: relative;
+}
+.review-item__icon {
+  position: absolute;
+  top: 19%;
+  right: 9%;
+}
+.review-item__header {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18 * 100%);
+  margin-bottom: 10px;
+}
+.review-item__sub-header {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(17 / 14 * 100%);
+  color: #999999;
+  margin-bottom: 25px;
+}
+.review-item__text {
+  font-weight: 400;
+  line-height: (20/16 * 100%);
+  color: #999999;
+}
+.review-slider .swiper-pagination {
+  bottom: 0;
+  left: 0;
+  text-align: left;
+}
+.review-slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #f5fcfd;
+  border: 1.6px solid #0063dd;
+  border-radius: 32px;
+  opacity: 1;
+}
+.review-slider .swiper-pagination-bullet-active {
+  width: 38px;
+  height: 12px;
+  background-color: #0063dd;
+  border: 1.6px solid #0063dd;
+  border-radius: 32px;
+}
+
 /*  free-trial ---------------------------------------------------------------------- */
 .page__free-trial {
 }

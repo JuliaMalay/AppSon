@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -304,7 +308,69 @@
             </div>
           </div>
         </section>
-        <section class="page__reviews reviews"></section>
+        <section class="page__reviews reviews">
+          <div class="reviews__image">
+            <img src="img/reviews/Image.png" alt="hands" />
+          </div>
+          <div class="reviews__container">
+            <div class="reviews__body">
+              <h2 class="reviews__title">Trusted By More Than 55M Peoples</h2>
+              <!-- Slider main container -->
+              <div class="review-slider swiper">
+                <!-- Additional required wrapper -->
+                <div class="review-slider__wrapper swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="review-slider__slide swiper-slide">
+                      <img src="img/reviews/twitter.svg" alt="twitter" class="review-item__icon">
+                      <h3 class="review-item__header">Raisa Moni 1</h3>
+                      <span class="review-item__sub-header">Envato Customer</span>
+                      <p class="review-item__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt ut labore etamet.
+                      </p>
+                  </div>
+                  <div class="review-slider__slide swiper-slide">
+                      <img src="img/reviews/twitter.svg" alt="twitter" class="review-item__icon">
+                      <h3 class="review-item__header">Raisa Moni 2</h3>
+                      <span class="review-item__sub-header">Envato Customer</span>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt ut labore etamet.
+                      </p>
+                  </div>
+                  <div class="review-slider__slide swiper-slide">
+                      <img src="img/reviews/twitter.svg" alt="twitter" class="review-item__icon">
+                      <h3 class="review-item__header">Raisa Moni 3</h3>
+                      <span class="review-item__sub-header">Envato Customer</span>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt ut labore etamet.
+                      </p>
+                  </div>
+                  <div class="review-slider__slide swiper-slide">
+                    <img src="img/reviews/twitter.svg" alt="twitter" class="review-item__icon">
+                    <h3 class="review-item__header">Raisa Moni 4</h3>
+                    <span class="review-item__sub-header">Envato Customer</span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                      sed do eiusmod tempor incididunt ut labore etamet.
+                    </p>
+                </div>
+                <div class="review-slider__slide swiper-slide">
+                  <img src="img/reviews/twitter.svg" alt="twitter" class="review-item__icon">
+                  <h3 class="review-item__header">Raisa Moni 5</h3>
+                  <span class="review-item__sub-header">Envato Customer</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                    sed do eiusmod tempor incididunt ut labore etamet.
+                  </p>
+              </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
         <section class="page__news news"></section>
         <section class="page__free-trial free-trial">
           <div class="free-trial__container _container">
@@ -365,5 +431,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
