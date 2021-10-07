@@ -16,3 +16,12 @@ const swiper = new Swiper('.review-slider', {
 //     clickable: true,
 //   },
 // });
+window.onload = () => {
+  window.onscroll = () => {
+    if (window.scrollY < 500) {
+      document.querySelector('.scroll').classList.add('hide');
+    } else if (window.scrollY > 500) {
+      document.querySelector('.scroll').classList.remove('hide');
+    }
+  };
+};
