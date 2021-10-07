@@ -302,7 +302,7 @@ img {
 
 .main-block {
   position: relative;
-  background: url(/img/homepage/background.png) no-repeat;
+  background: url('../img/homepage/background.png') no-repeat;
   background-size: cover;
   padding: 100px 0px 0px 0px;
 }
@@ -369,7 +369,7 @@ img {
 }
 
 .main-block__device_left {
-  background: url(/img/homepage/phone-left.png);
+  background: url('../img/homepage/phone-left.png');
   position: absolute;
   bottom: 0;
   left: 50px;
@@ -377,13 +377,13 @@ img {
   height: 400px;
 }
 .main-block__device_center {
-  background: url(/img/homepage/phone-center.png);
+  background: url('../img/homepage/phone-center.png');
   width: 320px;
   height: 495px;
   z-index: 2;
 }
 .main-block__device_right {
-  background: url(/img/homepage/phone-right.png);
+  background: url('../img/homepage/phone-right.png');
   background-position: -10px -10px;
   position: absolute;
   bottom: 0;
