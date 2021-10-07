@@ -69,6 +69,7 @@ h6 {
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  position: relative;
 }
 ._container {
   max-width: 1160px;
@@ -87,7 +88,7 @@ h6 {
   object-fit: cover;
 }
 .main-button {
-  background-color: transparent;
+  background-color: #fff;
   border-radius: 25px;
   padding: 15px 50px;
   color: #0f7bff;
@@ -123,12 +124,17 @@ h6 {
   left: 0px;
   top: 0px;
   z-index: 50;
+  display: flex;
+  justify-content: center;
 }
 .header__container {
+  width: 100%;
   display: flex;
   min-height: 100px;
+  max-width: 104rem;
   align-items: center;
   justify-content: space-between;
+  padding: 0px 15px;
 }
 .header__logo__text {
   font-weight: 700;
@@ -199,21 +205,23 @@ h6 {
 
 .main-block {
   position: relative;
-  background: url(/img/homepage/Background.jpg) no-repeat;
+  background: url(/img/homepage/background.png) no-repeat;
   background-size: cover;
 }
-.main-block__content {
+.main-block__container {
   padding: 100px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .main-block__header-block {
 }
 .header-block {
-  padding: 188px 0px 108px 0px;
-  position: relative;
-  z-index: 2;
+  padding: 88px 0px 108px 0px;
   max-width: 655px;
   text-align: center;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -254,30 +262,71 @@ h6 {
 }
 
 .main-block__devices {
-  position: relative;
-  z-index: 2;
-  flex: 0 1 33.333%;
 }
 .devices {
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
-  padding: 50px 40px;
+  width: 805px;
 }
-.main-block__down {
+
+.main-block__device_left {
+  background: url(/img/homepage/phone-left.png);
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  width: 265px;
+  height: 400px;
+}
+.main-block__device_center {
+  background: url(/img/homepage/phone-center.png);
+  width: 320px;
+  height: 495px;
   z-index: 2;
-  position: relative;
-  width: 70px;
-  height: 70px;
-  margin: 0 auto;
 }
+.main-block__device_right {
+  background: url(/img/homepage/phone-right.png);
+  background-position: -10px -10px;
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  width: 265px;
+  height: 400px;
+}
+.main-block__device {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* .main-block__device {
+  width: 320px;
+  height: 208px;
+  overflow: hidden;
+}
+.main-block__device img {
+  background-size: cover;
+  position: relative;
+  top: -10px;
+} */
+.main-block__down {
+  position: absolute;
+  bottom: -60px;
+  bottom: 15px;
+  width: 114px;
+  height: 114px;
+  z-index: 3;
+  text-align: center;
+}
+
 /*    FEATURES ---------------------------------------------------------------------- */
 .features {
   background-color: #f5fcfd;
   padding-top: 165px;
   padding-bottom: 130px;
+  position: relative;
+  margin: -80px 0px 0px 0px;
+  z-index: 2;
 }
 .features__container {
 }
@@ -384,11 +433,28 @@ h6 {
 }
 .item-about__text {
 }
+
 .more {
   color: #0063dd;
   font-weight: 500;
   display: flex;
+  cursor: pointer;
 }
+.more img {
+  width: 67px;
+}
+/* .item-about__more:hover {
+  min-height: 50px;
+  border: 1px solid #0f7bff;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px 70px;
+  transition: background-color 0.3s ease 0s;
+  cursor: pointer;
+} */
 .more > *:not(:last-child) {
   margin-right: 15px;
 }
@@ -426,7 +492,7 @@ h6 {
 .how-works__container {
 }
 .how-works__header {
-  width: 720px;
+  max-width: 720px;
   text-align: center;
   margin: 0px auto 45px;
 }
@@ -778,6 +844,7 @@ h6 {
   color: #fff;
   padding: 15px 70px;
   transition: background-color 0.3s ease 0s;
+  cursor: pointer;
 }
 .free-trial__button > *:not(:last-child) {
   margin-right: 15px;
@@ -842,9 +909,6 @@ input[type='email']::-ms-input-placeholder {
 input[type='email']::placeholder {
   color: #fff;
 }
-.subscribe__input:hover {
-  color: #000;
-}
 .subscribe__button {
   font-family: Quicksand;
   background: #fff;
@@ -900,4 +964,20 @@ input[type='email']::placeholder {
 }
 .social__item:not(:last-child) {
   margin-right: 15px;
+}
+.scroll {
+  position: absolute;
+  bottom: 2rem;
+  right: 5rem;
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.scroll a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }

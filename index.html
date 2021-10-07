@@ -17,24 +17,24 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="header__container _container">
+      <header class="header" id="top">
+        <div class="header__container">
           <div class="header__logo">
             <a href="" class="header__logo__text">AppSon</a>
           </div>
           <nav class="header__menu menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="" class="menu__link">Home</a>
+                <a href="#top" class="menu__link">Home</a>
               </li>
               <li class="menu__item">
-                <a href="" class="menu__link">Features</a>
+                <a href="#features" class="menu__link">Features</a>
               </li>
               <li class="menu__item">
-                <a href="" class="menu__link">Pricing</a>
+                <a href="#pricing" class="menu__link">Pricing</a>
               </li>
               <li class="menu__item">
-                <a href="" class="menu__link">Pages</a>
+                <a href="#news" class="menu__link">Pages</a>
               </li>
             </ul>
             <button class="header__button main-button main-button_fill">
@@ -63,26 +63,18 @@
                 <a href="" class="main-block__button main-button">Free Trial</a>
               </div>
             </div>
-            <!-- <div class="main-block__devices devices">
-              <div class="main-block__device">
-                <img src="img/homepage/device1.svg" alt="device" />
-              </div>
-              <div class="main-block__device">
-                <img src="img/homepage/device2.svg" alt="device" />
-              </div>
-              <div class="main-block__device">
-                <img src="img/homepage/device3.svg" alt="device" />
-              </div>
-            </div> -->
-            <!-- <div class="main-block__image _ibg">
-              <img src="img/background.jpg" alt="cover" />
-            </div> -->
+            <div class="main-block__devices devices">
+              <div class="main-block__device main-block__device_left"></div>
+              <div class="main-block__device main-block__device_center"></div>
+              <div class="main-block__device main-block__device_right"></div>
           </div>
           <div class="main-block__down">
-            <a href="#features"
-              ><img src="img/homepage/scroll-down.svg" alt="scroll-down"
-            /></a>
+            <a href="#features">
+                <img src="img/homepage/scroll-down.svg" alt="scroll-down"/>
+            </a>
           </div>
+
+        </div>
         </div>
         <div class="page__features features" id="features">
           <div class="features__container _container">
@@ -143,7 +135,7 @@
                     elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua.
                   </p>
-                  <a class="item-about__more more">
+                  <a href="#" class="item-about__more more">
                     <div class="more__text">Read More</div>
                     <img src="img/about/arrow.svg" alt="arrow"
                   /></a>
@@ -159,7 +151,7 @@
                     elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua.
                   </p>
-                  <a class="item-about__more more">
+                  <a href="#" class="item-about__more more">
                     <div class="more__text">Read More</div>
                     <img src="img/about/arrow.svg" alt="arrow"
                   /></a>
@@ -176,10 +168,7 @@
           <div class="how-works__container _container">
             <div class="how-works__header">
               <h2 class="header__title">How Does It Works?</h2>
-              <p class="header__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet.
+              <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet.
               </p>
             </div>
             <div class="how-works__body">
@@ -232,7 +221,7 @@
             </div>
           </div>
         </section>
-        <section class="page__pricing pricing">
+        <section class="page__pricing pricing" id="pricing">
           <div class="pricing__container _container">
             <div class="pricing__body">
               <div class="pricing__content">
@@ -371,7 +360,7 @@
             </div>
           </div>
         </section>
-        <section class="page__news news">
+        <section class="page__news news" id="news">
           <div class="news__container _container">
           <div class="news__header">
             <h2 class="news__title">Latest News From Us</h2>
@@ -490,7 +479,11 @@
           </div>
         </div>
       </footer>
-
+      <div class="scroll">
+        <a href="#top" name="scroll-link">
+          <img src="/img/arrow-up.svg" alt="arrow-up">
+        </a>
+      </div>
     </div>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
